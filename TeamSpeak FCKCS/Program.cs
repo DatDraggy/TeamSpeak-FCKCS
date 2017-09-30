@@ -35,7 +35,7 @@ namespace TeamSpeak_FCKCS
         {
             try
             {
-                Console.Title = "TeamSpeak Bot Spawner [Codename: FCKCS]";
+                Console.Title = "TeamSpeak Zombie Client Spawner";
                 Console.OutputEncoding = Encoding.UTF8;
 
                 _handler += new EventHandler(Handler);
@@ -58,32 +58,32 @@ namespace TeamSpeak_FCKCS
         {
             BaseInterface();
 
-            Console.WriteLine("Yo Sucker, enter IP:");
+            Console.WriteLine("IP: ");
             string IP = Console.ReadLine();
 
             BaseInterface();
 
-            Console.WriteLine("Yo Sucker, enter a Port:");
+            Console.WriteLine("Port: ");
             ushort.TryParse(Console.ReadLine(), out ushort Port);
 
             BaseInterface();
 
-            Console.WriteLine("Yo Sucker, require a Security Level: ");
+            Console.WriteLine("Security level: ");
             int.TryParse(Console.ReadLine(), out int SecurityLevel);
 
             BaseInterface();
 
-            Console.WriteLine("Yo Sucker, how many Bots you want to spawn? ");
+            Console.WriteLine("Amount of zombies: ");
             int.TryParse(Console.ReadLine(), out int BotsToSpawn);
 
             BaseInterface();
 
-            Console.WriteLine("Yo Sucker, delay between connections(ms): ");
+            Console.WriteLine("Delay between connections(ms): ");
             int.TryParse(Console.ReadLine(), out int Delay);
 
             BaseInterface();
 
-            Console.WriteLine("Yo Sucker, Password of the Server?");
+            Console.WriteLine("Password: ");
             string Password = Console.ReadLine();
 
             await Spawner(IP, Port, SecurityLevel, BotsToSpawn, Delay, Password);
@@ -112,7 +112,7 @@ namespace TeamSpeak_FCKCS
 
                     ConnectionDataFull Connection = new ConnectionDataFull()
                     {
-                        Hostname = IP,
+                        Address = IP,
                         Port = Port,
                         Username = BotName,
                         Identity = Identity,
@@ -120,7 +120,7 @@ namespace TeamSpeak_FCKCS
                     };
 
                     Client.Connect(Connection);
-                    Client.QuitMessage = "https://r4p3.net [Stay W4RM]";
+                    Client.QuitMessage = "Zombie left";
                     Clients.Add(Client);
 
                     await Task.Delay(Delay);

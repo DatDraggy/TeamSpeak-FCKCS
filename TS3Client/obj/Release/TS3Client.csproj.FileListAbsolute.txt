@@ -1,0 +1,8 @@
+K:\Code\GitHub\TeamSpeak-FCKCS\TS3Client\obj\Release\TS3Client.csproj.CoreCompileInputs.cache
+K:\Code\GitHub\TeamSpeak-FCKCS\TS3Client\obj\Release\TS3Client.csprojResolveAssemblyReference.cache
+K:\Code\GitHub\TeamSpeak-FCKCS\TS3Client\bin\Release\TS3Client.dll
+K:\Code\GitHub\TeamSpeak-FCKCS\TS3Client\bin\Release\TS3Client.pdb
+K:\Code\GitHub\TeamSpeak-FCKCS\TS3Client\bin\Release\BouncyCastle.Crypto.dll
+K:\Code\GitHub\TeamSpeak-FCKCS\TS3Client\bin\Release\Heijden.Dns.dll
+K:\Code\GitHub\TeamSpeak-FCKCS\TS3Client\obj\Release\TS3Client.dll
+K:\Code\GitHub\TeamSpeak-FCKCS\TS3Client\obj\Release\TS3Client.pdb
